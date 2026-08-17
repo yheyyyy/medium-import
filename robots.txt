@@ -1,2 +1,8 @@
+# Crawling is ALLOWED on purpose.
+#
+# Every page here carries <meta name="robots" content="noindex,nofollow">, which is the
+# reliable way to keep these staging copies out of search results. Blocking with
+# Disallow would prevent crawlers from ever reading that noindex tag -- and would risk
+# blocking Medium's own importer, which is the only reason this host exists.
 User-agent: *
-Disallow: /
+Allow: /
